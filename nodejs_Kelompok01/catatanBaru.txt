@@ -1,0 +1,5 @@
+{
+  "nama": "Mas Ibrahim",
+  "umur": 20,
+  "bidang": "Frontend Javascript"
+}
