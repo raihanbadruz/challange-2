@@ -1,3 +1,5 @@
+console.log("");
+
 // NOMOR 1
 console.log("Soal Nomor 1");
 function changeWord(selectedText, changedText, text) {
@@ -28,14 +30,25 @@ console.log("");
 console.log("Soal Nomor 2");
 
 const checkTypeNumber = (givenNumber) => {
+  if (givenNumber === undefined) {
+    return "Error : Invalid data type";
+  }
+  if (typeof givenNumber !== "number") {
+    return "Error : Invalid data type";
+  }
   if (givenNumber % 2 === 0) {
-    return "Genap";
+    return "GENAP";
   } else {
-    return "Ganjil";
+    return "GANJIL";
   }
 };
 
-console.log(checkTypeNumber(9));
+console.log(checkTypeNumber(10));
+console.log(checkTypeNumber(3));
+console.log(checkTypeNumber("3"));
+console.log(checkTypeNumber({}));
+console.log(checkTypeNumber([]));
+console.log(checkTypeNumber());
 
 // const checkTypeNumber = (givenNumber) => {
 //   console.log(typeof givenNumber);
