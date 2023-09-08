@@ -218,11 +218,11 @@ const namaProdukTerlaris = produkBukuTerlaris(dataPenjualanNovel);
 console.log("Judul buku terlaris adalah " + namaProdukTerlaris);
 
 //PENULIS TERLARIS
-function dapatkanPenulisTerpopuler(data) {
+function dapatkanPenulisTerpopuler(dataPenjualan) {
   const penjualanPenulis = {};
 
   // Menghitung total penjualan untuk setiap penulis
-  data.forEach((produk) => {
+  dataPenjualan.forEach((produk) => {
     if (!penjualanPenulis[produk.penulis]) {
       penjualanPenulis[produk.penulis] = 0;
     }
