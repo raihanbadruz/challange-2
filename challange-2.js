@@ -28,17 +28,29 @@ console.log("");
 console.log("Soal Nomor 2");
 
 const checkTypeNumber = (givenNumber) => {
-  if (givenNumber % 2 == 0) {
+  if (givenNumber % 2 === 0) {
     return "Genap";
   } else {
     return "Ganjil";
   }
 };
 
-// let angka = 9;
-let angka = 200;
+console.log(checkTypeNumber(9));
 
-console.log("Ini adalah angka " + checkTypeNumber(angka));
+// const checkTypeNumber = (givenNumber) => {
+//   console.log(typeof givenNumber);
+//   if (typeof givenNumber === "string") {
+//     console.log("Maaf string tidak boleh");
+//   } else {
+//     if (givenNumber % 2 === 0) {
+//       return "genap";
+//     } else {
+//       return "ganjil";
+//     }
+//   }
+// };
+
+// console.log(checkTypeNumber("8"));
 
 // NOMOR 3
 console.log("");
@@ -245,3 +257,5 @@ function dapatkanPenulisTerpopuler(dataPenjualan) {
 
 const penulisTerlaris = dapatkanPenulisTerpopuler(dataPenjualanNovel);
 console.log("Penulis buku terlaris adalah " + penulisTerlaris);
+
+console.log("");
